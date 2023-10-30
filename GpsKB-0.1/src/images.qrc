@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/images" >
+        <file>rsc/agt_internet.png</file>
+    </qresource>
+</RCC>

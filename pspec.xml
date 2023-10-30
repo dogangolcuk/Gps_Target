@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>GpsKB</Name>
+	<Homepage>http://code.google.com/dogangolcuk</Homepage>
+        <Packager>
+            <Name>dogangolcuk</Name>
+            <Email>dogangolcuk@gmail.com</Email>
+        </Packager>
+        <License>GPL-2</License>
+        <IsA>app:gui</IsA>
+	<PartOf>applications.education</PartOf>
+        <Summary>KaraBombardımanı.</Summary>
+        <Description>Anlık olarak girilen hedefe istinaden mesafe kerteriz değerlerini verir ve istendiğinde değerleri kaydeder.</Description>
+	<Archive sha1sum="8afa30df98928bc589ba918d1e15bcb4f9368f9c" type="targz">/home/qwerty/MyProgs/GPSVeri/GpsKB-0.1.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>qt4</Dependency>
+	    <Dependency>qt4-sql-sqlite</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+	 <Name>GpsKB</Name>
+         <RuntimeDependencies>
+            <Dependency>qt4</Dependency>
+	    <Dependency>qt4-sql-sqlite</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+	    <Path fileType="data">/tmp</Path>
+        </Files>
+        <AdditionalFiles>
+		<AdditionalFile owner="root" permission="0777" target="/usr/share/applications/GpsKB.desktop">GpsKB.desktop</AdditionalFile>
+		<AdditionalFile  owner="root" permission="0777" target="/tmp/kbveriler">kbveriler</AdditionalFile>
+        </AdditionalFiles>
+   </Package>
+   <History>
+        <Update release="1">
+            <Date>2008-05-14</Date>
+            <Version>0.1</Version>
+            <Comment>First release</Comment>
+            <Name>dogangolcuk</Name>
+            <Email>dogangolcuk@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
+

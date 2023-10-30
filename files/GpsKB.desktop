@@ -1,0 +1,20 @@
+[Desktop Entry]
+Categories=Application;Translation;Office;Dictionary;Education;QT;
+Comment=GpsKB
+Comment[tr]=GpsKB
+Encoding=UTF-8
+Exec[$e]=GpsKB
+GenericName=Gps KaraBombardımanı
+GenericName[tr]=Gps KaraBombardımanı
+Icon=core
+MimeType=
+Name=Gps KaraBombardımanı
+Name[tr]=Gps KaraBombardımanı
+Path[$e]=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-DCOP-ServiceType=
+X-KDE-SubstituteUID=false
+X-KDE-Username=

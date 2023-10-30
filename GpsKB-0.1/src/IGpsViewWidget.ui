@@ -1,0 +1,168 @@
+<ui version="4.0" >
+ <class>IGpsViewWidget</class>
+ <widget class="QWidget" name="IGpsViewWidget" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>225</width>
+    <height>398</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Gps</string>
+  </property>
+  <layout class="QGridLayout" >
+   <item row="0" column="0" >
+    <widget class="QGroupBox" name="groupBox_4" >
+     <property name="title" >
+      <string/>
+     </property>
+     <layout class="QGridLayout" >
+      <item row="0" column="0" >
+       <widget class="QLabel" name="label" >
+        <property name="text" >
+         <string>Enlem :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" colspan="2" >
+       <widget class="QLineEdit" name="LeEnlem" >
+        <property name="inputMask" >
+         <string>A99 99.999; </string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" >
+       <widget class="QLabel" name="label_2" >
+        <property name="text" >
+         <string>Boylam:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1" colspan="2" >
+       <widget class="QLineEdit" name="LeBoylam" >
+        <property name="inputMask" >
+         <string>A999 99.999; </string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0" >
+       <widget class="QLabel" name="label_3" >
+        <property name="text" >
+         <string>Hız:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1" >
+       <widget class="QLCDNumber" name="LcdHiz" >
+        <property name="frameShape" >
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <property name="segmentStyle" >
+         <enum>QLCDNumber::Flat</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2" >
+       <widget class="QComboBox" name="CbHizBirimi" >
+        <property name="font" >
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="insertPolicy" >
+         <enum>QComboBox::NoInsert</enum>
+        </property>
+        <property name="sizeAdjustPolicy" >
+         <enum>QComboBox::AdjustToContents</enum>
+        </property>
+        <property name="frame" >
+         <bool>true</bool>
+        </property>
+        <item>
+         <property name="text" >
+          <string>KTS</string>
+         </property>
+        </item>
+        <item>
+         <property name="text" >
+          <string>M/SN</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="3" column="0" >
+       <widget class="QLabel" name="label_4" >
+        <property name="text" >
+         <string>Rota :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1" >
+       <widget class="QLCDNumber" name="LcdRota" >
+        <property name="maximumSize" >
+         <size>
+          <width>16777215</width>
+          <height>23</height>
+         </size>
+        </property>
+        <property name="layoutDirection" >
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="frameShape" >
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <property name="frameShadow" >
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="smallDecimalPoint" >
+         <bool>false</bool>
+        </property>
+        <property name="mode" >
+         <enum>QLCDNumber::Dec</enum>
+        </property>
+        <property name="segmentStyle" >
+         <enum>QLCDNumber::Flat</enum>
+        </property>
+        <property name="value" stdset="0" >
+         <double>0.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0" >
+       <widget class="QLabel" name="label_5" >
+        <property name="text" >
+         <string>Saat :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1" colspan="2" >
+       <widget class="QLineEdit" name="LeZaman" >
+        <property name="toolTip" >
+         <string>Buraya simule yazarsanız gemi bilgilerini elle girebilirsiniz.</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0" >
+       <widget class="QLabel" name="label_14" >
+        <property name="text" >
+         <string>Tarih :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1" colspan="2" >
+       <widget class="QDateEdit" name="DeGpsTarih" >
+        <property name="displayFormat" >
+         <string>dd.MM.yy</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

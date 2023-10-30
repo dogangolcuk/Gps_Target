@@ -1,0 +1,309 @@
+<ui version="4.0" >
+ <class>IDlgNmeaGps</class>
+ <widget class="QWidget" name="IDlgNmeaGps" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>573</width>
+    <height>420</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Gps Ayarları</string>
+  </property>
+  <property name="windowIcon" >
+   <iconset/>
+  </property>
+  <layout class="QGridLayout" >
+   <item row="0" column="0" >
+    <widget class="QFrame" name="frame" >
+     <property name="frameShape" >
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow" >
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QGridLayout" >
+      <item row="0" column="0" >
+       <widget class="QLabel" name="label_11" >
+        <property name="text" >
+         <string>Port :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" >
+       <widget class="QComboBox" name="CbPorts" />
+      </item>
+      <item row="2" column="0" >
+       <widget class="QLabel" name="label_6" >
+        <property name="text" >
+         <string>DataBits :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0" >
+       <widget class="QComboBox" name="CbDataBits" >
+        <item>
+         <property name="text" >
+          <string>DATA_5</string>
+         </property>
+        </item>
+        <item>
+         <property name="text" >
+          <string>DATA_6</string>
+         </property>
+        </item>
+        <item>
+         <property name="text" >
+          <string>DATA_7</string>
+         </property>
+        </item>
+        <item>
+         <property name="text" >
+          <string>DATA_8</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="4" column="0" >
+       <widget class="QLabel" name="label_10" >
+        <property name="text" >
+         <string>BaudRate :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0" >
+       <widget class="QComboBox" name="CbBaudRate" >
+        <item>
+         <property name="text" >
+          <string>BAUD50</string>
+         </property>
+        </item>
+        <item>
+         <property name="text" >
+          <string>BAUD75</string>
+         </property>
+        </item>
+        <item>
+         <property name="text" >
+          <string>BAUD110</string>
+         </property>
+        </item>
+        <item>
+         <property name="text" >
+          <string>BAUD134</string>
+         </property>
+        </item>
+        <item>
+         <property name="text" >
+          <string>BAUD150</string>
+         </property>
+        </item>
+        <item>
+         <property name="text" >
+          <string>BAUD200</string>
+         </property>
+        </item>
+        <item>
+         <property name="text" >
+          <string>BAUD300</string>
+         </property>
+        </item>
+        <item>
+         <property name="text" >
+          <string>BAUD600</string>
+         </property>
+        </item>
+        <item>
+         <property name="text" >
+          <string>BAUD1200</string>
+         </property>
+        </item>
+        <item>
+         <property name="text" >
+          <string>BAUD1800</string>
+         </property>
+        </item>
+        <item>
+         <property name="text" >
+          <string>BAUD2400</string>
+         </property>
+        </item>
+        <item>
+         <property name="text" >
+          <string>BAUD4800</string>
+         </property>
+        </item>
+        <item>
+         <property name="text" >
+          <string>BAUD9600</string>
+         </property>
+        </item>
+        <item>
+         <property name="text" >
+          <string>BAUD14400</string>
+         </property>
+        </item>
+        <item>
+         <property name="text" >
+          <string>BAUD19200</string>
+         </property>
+        </item>
+        <item>
+         <property name="text" >
+          <string>BAUD38400</string>
+         </property>
+        </item>
+        <item>
+         <property name="text" >
+          <string>BAUD56000</string>
+         </property>
+        </item>
+        <item>
+         <property name="text" >
+          <string>BAUD57600</string>
+         </property>
+        </item>
+        <item>
+         <property name="text" >
+          <string>BAUD76800</string>
+         </property>
+        </item>
+        <item>
+         <property name="text" >
+          <string>BAUD115200</string>
+         </property>
+        </item>
+        <item>
+         <property name="text" >
+          <string>BAUD128000</string>
+         </property>
+        </item>
+        <item>
+         <property name="text" >
+          <string>BAUD256000</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="1" >
+    <widget class="QFrame" name="frame_2" >
+     <property name="frameShape" >
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow" >
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QGridLayout" >
+      <item row="0" column="0" >
+       <widget class="QLabel" name="label_7" >
+        <property name="text" >
+         <string>Parity :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="2" >
+       <widget class="QComboBox" name="CbParity" >
+        <item>
+         <property name="text" >
+          <string>PAR_NONE</string>
+         </property>
+        </item>
+        <item>
+         <property name="text" >
+          <string>PAR_ODD</string>
+         </property>
+        </item>
+        <item>
+         <property name="text" >
+          <string>PAR_EVEN</string>
+         </property>
+        </item>
+        <item>
+         <property name="text" >
+          <string>PAR_MARK</string>
+         </property>
+        </item>
+        <item>
+         <property name="text" >
+          <string>PAR_SPACE</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="2" column="0" colspan="2" >
+       <widget class="QLabel" name="label_8" >
+        <property name="text" >
+         <string>FlowControl :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0" colspan="2" >
+       <widget class="QComboBox" name="CbFlowControl" >
+        <item>
+         <property name="text" >
+          <string>FLOW_OFF</string>
+         </property>
+        </item>
+        <item>
+         <property name="text" >
+          <string>FLOW_HARDWARE</string>
+         </property>
+        </item>
+        <item>
+         <property name="text" >
+          <string>FLOW_XONXOFF</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="4" column="0" >
+       <widget class="QLabel" name="label_9" >
+        <property name="text" >
+         <string>StopBits :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0" colspan="2" >
+       <widget class="QComboBox" name="CbStopBits" >
+        <item>
+         <property name="text" >
+          <string>STOP_1</string>
+         </property>
+        </item>
+        <item>
+         <property name="text" >
+          <string>STOP_1_5</string>
+         </property>
+        </item>
+        <item>
+         <property name="text" >
+          <string>STOP_2</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="2" >
+    <widget class="QPushButton" name="PbKaydet" >
+     <property name="text" >
+      <string>Ayarları Kaydet</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0" colspan="2" >
+    <widget class="QTextEdit" name="TeRecieveData" />
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="images.qrc" />
+ </resources>
+ <connections/>
+</ui>

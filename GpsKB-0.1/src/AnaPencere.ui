@@ -1,0 +1,251 @@
+<ui version="4.0" >
+ <class>AnaPencere</class>
+ <widget class="QMainWindow" name="AnaPencere" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>590</width>
+    <height>407</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>KB 0.1</string>
+  </property>
+  <property name="windowIcon" >
+   <iconset/>
+  </property>
+  <widget class="QWidget" name="centralwidget" >
+   <layout class="QGridLayout" >
+    <item row="0" column="0" >
+     <widget class="QSplitter" name="splitter_2" >
+      <property name="orientation" >
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QWidget" native="1" name="GpsYuva" />
+      <widget class="QSplitter" name="splitter" >
+       <property name="orientation" >
+        <enum>Qt::Vertical</enum>
+       </property>
+       <widget class="QTabWidget" name="tabWidget" >
+        <property name="tabShape" >
+         <enum>QTabWidget::Rounded</enum>
+        </property>
+        <property name="currentIndex" >
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="tab_2" >
+         <attribute name="title" >
+          <string>Hedef </string>
+         </attribute>
+         <layout class="QGridLayout" >
+          <item row="0" column="0" >
+           <widget class="QGroupBox" name="groupBox_2" >
+            <property name="title" >
+             <string/>
+            </property>
+            <layout class="QGridLayout" >
+             <item row="0" column="0" >
+              <widget class="QLabel" name="label_15" >
+               <property name="text" >
+                <string>Hedef Enlem :</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1" >
+              <widget class="QLineEdit" name="LeHedefEnlem" >
+               <property name="inputMask" >
+                <string>A99 99.999; </string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0" >
+              <widget class="QLabel" name="label_16" >
+               <property name="text" >
+                <string>Hedef Boylam :</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1" >
+              <widget class="QLineEdit" name="LeHedefBoylam" >
+               <property name="inputMask" >
+                <string>A999 99.999; </string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="0" column="1" >
+           <widget class="QGroupBox" name="groupBox_3" >
+            <property name="title" >
+             <string/>
+            </property>
+            <layout class="QGridLayout" >
+             <item row="0" column="0" >
+              <widget class="QLabel" name="label_19" >
+               <property name="text" >
+                <string>Mesafe :</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2" >
+              <widget class="QComboBox" name="CbUzunlukBirimi" >
+               <item>
+                <property name="text" >
+                 <string>NM</string>
+                </property>
+               </item>
+               <item>
+                <property name="text" >
+                 <string>KM</string>
+                </property>
+               </item>
+               <item>
+                <property name="text" >
+                 <string>YD</string>
+                </property>
+               </item>
+               <item>
+                <property name="text" >
+                 <string>MT</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="1" column="0" >
+              <widget class="QLabel" name="label_20" >
+               <property name="text" >
+                <string>Kerteriz :</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1" >
+              <widget class="QLineEdit" name="LeMesafe" />
+             </item>
+             <item row="1" column="1" >
+              <widget class="QLineEdit" name="LeKerteriz" />
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_5" >
+         <attribute name="title" >
+          <string>DR Mevkii</string>
+         </attribute>
+         <layout class="QGridLayout" >
+          <item row="0" column="0" >
+           <widget class="QLineEdit" name="LeDkSonra" />
+          </item>
+          <item row="0" column="1" >
+           <widget class="QLabel" name="label_23" >
+            <property name="text" >
+             <string>Sn. Aralıklarla</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2" >
+           <widget class="QPushButton" name="PbHesapla" >
+            <property name="text" >
+             <string>Hesapla</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0" colspan="3" >
+           <widget class="QTextEdit" name="TeDr" >
+            <property name="toolTip" >
+             <string>Tekrar Hesaplamaya Basıldığında Tüm Buradaki Veriler Silinir.Ctrl A ile hepsini seçip Ctrl C ile kopyalayabilirsiniz.</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_4" >
+         <attribute name="title" >
+          <string>Hakkında</string>
+         </attribute>
+         <layout class="QGridLayout" >
+          <item row="0" column="0" >
+           <widget class="QLabel" name="label_13" >
+            <property name="text" >
+             <string>
+Doğan Gölcük
+</string>
+            </property>
+            <property name="alignment" >
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_5" >
+        <property name="title" >
+         <string>Kayıt Defteri</string>
+        </property>
+        <layout class="QGridLayout" >
+         <item row="0" column="0" >
+          <widget class="QCheckBox" name="ChbVeri" >
+           <property name="font" >
+            <font>
+             <pointsize>7</pointsize>
+            </font>
+           </property>
+           <property name="text" >
+            <string>Değerleri Kaydet</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0" >
+          <widget class="QTableView" name="tablo" />
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>590</width>
+     <height>29</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar" />
+  <widget class="QToolBar" name="toolBar" >
+   <property name="windowTitle" >
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea" >
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak" >
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionSerialConfig" />
+   <addaction name="actionKay_t_Yolu" />
+  </widget>
+  <action name="actionSerialConfig" >
+   <property name="text" >
+    <string>Gps Ayarları</string>
+   </property>
+  </action>
+  <action name="actionKay_t_Yolu" >
+   <property name="text" >
+    <string>Kayıt Dosyası</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="images.qrc" />
+ </resources>
+ <connections/>
+</ui>
